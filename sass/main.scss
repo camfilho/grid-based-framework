@@ -287,3 +287,68 @@ $grid-columns: 12;
   color: $text-secondary-color;
 } 
 
+.text-size-xsmall {
+  font-size: 10px;
+}
+
+.text-size-small {
+  font-size: 12px;
+}
+
+.text-size-medium {
+  font-size: 14px;
+}
+
+.text-size-large {
+  font-size: 16px;
+}
+
+.text-size-xlarge {
+  font-size: 18px;
+}
+
+.text-size-xxlarge {
+  font-size: 20px;
+}
+
+
+
+
+
+.text-weight-b {
+  font-weight: bold;
+}
+
+.text-weight-m {
+  font-weight: medium;
+}
+
+.text-weight-n {
+  font-weight: normal;
+}
+
+@for $i from 1 through 10 {
+  .b-t-#{$i}{
+    border-top: ($i /10)+rem;
+  }
+  .b-b-#{$i}{
+    border-bottom: ($i /10)+rem;
+  }
+  .b-l-#{$i}{
+    border-left: ($i /10)+rem;
+  }
+  .b-r-#{$i}{
+    border-right: ($i /10)+rem;
+  }
+}
+
+
+@for $i from 1 through 10 {
+  .border-radius-#{$i}{
+    border-radius: $i/10+rem;
+  }
+}
+
+.box-to-circle {
+  border-radius: 50%;
+}
