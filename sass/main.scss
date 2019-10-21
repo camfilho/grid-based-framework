@@ -23,12 +23,99 @@ $grid-columns: 12;
 }
 
 @for $i from 1 through $grid-columns {
-  .col--#{$i} {
+  .col--sm-#{$i} {
     padding: calc(var(--grid-gap)) 0 0 calc(var(--grid-gap));
     background-clip: content-box;
     background-color: red;
     box-sizing: border-box;
     flex-basis: round-width($i);
     max-width: round-width($i);
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  @for $i from 1 through $grid-columns {
+    .col--md-#{$i} {
+    padding: calc(var(--grid-gap)) 0 0 calc(var(--grid-gap));
+    background-clip: content-box;
+    background-color: blue;
+    box-sizing: border-box;
+    flex-basis: round-width($i);
+    max-width: round-width($i);
+    }
+  }
+  @for $i from 1 through 10 {
+    .m-md-t-#{$i} {
+      margin-top: ($i / 10) rem;
+    }
+  }
+  @for $i from 1 through 10 {
+    .m-md-b-#{$i} {
+      margin-bottom: ($i / 10) rem;
+    }
+  }
+  @for $i from 1 through 10 {
+    .m-md-l-#{$i} {
+      margin-left: ($i / 10) rem;
+    }
+  }
+  @for $i from 1 through 10 {
+    .m-md-r-#{$i} {
+      margin-right: ($i / 10) rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  @for $i from 1 through $grid-columns {
+    .col--lg-#{$i} {
+    padding: calc(var(--grid-gap)) 0 0 calc(var(--grid-gap));
+    background-clip: content-box;
+    background-color: green;
+    box-sizing: border-box;
+    flex-basis: round-width($i);
+    max-width: round-width($i);
+    }
+  }
+  @for $i from 1 through 10 {
+    .m-lg-t-#{$i} {
+      margin-top: ($i / 10) rem;
+    }
+  }
+  @for $i from 1 through 10 {
+    .m-lg-b-#{$i} {
+      margin-bottom: ($i / 10) rem;
+    }
+  }
+  @for $i from 1 through 10 {
+    .m-lg-l-#{$i} {
+      margin-left: ($i / 10) rem;
+    }
+  }
+  @for $i from 1 through 10 {
+    .m-lg-r-#{$i} {
+      margin-right: ($i / 10) rem;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .m-sm-t-#{$i} {
+    margin-top: ($i / 10) rem;
+  }
+}
+@for $i from 1 through 10 {
+  .m-sm-b-#{$i} {
+    margin-bottom: ($i / 10) rem;
+  }
+}
+@for $i from 1 through 10 {
+  .m-sm-l-#{$i} {
+    margin-left: ($i / 10) rem;
+  }
+}
+@for $i from 1 through 10 {
+  .m-sm-r-#{$i} {
+    margin-right: ($i / 10) rem;
   }
 }
