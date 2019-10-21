@@ -11,10 +11,9 @@ a {
   padding: 0 21px 0 21px;
 }
 
-nav {
-  height: 72px;
-  background-color: #cec7db;
-}
+
+
+
 
 $bg-primary-color: #f4efff;
 $bg-secondary-color: white;
@@ -27,7 +26,27 @@ $grid-columns: 12;
   @return $width#{"%"};
 }
 
+nav {
+  height: 72px;
+  background-color: #cec7db;
+  flex-basis: 100%;
+}
+
+.nav__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
 .container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: calc(var(--grid-gap) * -1) 0 0 calc(var(--grid-gap) * -1);
@@ -290,7 +309,7 @@ $grid-columns: 12;
 }
 
 .text-v-align-center {
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .text-h-align-left {
