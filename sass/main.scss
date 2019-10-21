@@ -2,6 +2,10 @@
   --grid-gap: 10px;
 }
 
+$bg-primary-color: blue;
+$bg-secondary-color: yellow;
+$text-primary-color: white;
+$text-secondary-color: black;
 $grid-columns: 12;
 
 @function round-width($i) {
@@ -131,6 +135,9 @@ $grid-columns: 12;
       padding-right: ($i / 10)+rem;
     }
   }
+  .d-md-none {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -187,6 +194,9 @@ $grid-columns: 12;
       padding-right: ($i / 10)+rem;
     }
   }
+  .d-lg-none {
+    display: none;
+  }
 }
 
 
@@ -224,3 +234,56 @@ $grid-columns: 12;
 .pos-fixed {
   position: fixed;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.d-hidden {
+  display: hidden;
+}
+
+.d-sm-none {
+  display: none;
+}
+
+.text-v-align-top {
+  vertical-align: top;
+}
+
+.text-v-align-bottom {
+  vertical-align: bottom;
+}
+
+.text-v-align-center {
+  vertical-align: center;
+}
+
+.text-h-align-left {
+  text-align: left;
+}
+
+.text-h-align-right {
+  text-align: right;
+}
+
+.text-h-align-center {
+  text-align: center;
+}
+
+.bg-primary-color {
+  background-color: $bg-primary-color;
+}
+
+.bg-secondary-color {
+  background-color: $bg-secondary-color;
+}
+
+.text-primary-color{
+  color: $text-primary-color;
+} 
+
+.text-secondary-color{
+  color: $text-secondary-color;
+} 
+
