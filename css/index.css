@@ -15,6 +15,9 @@ h5 {
   font-weight: 400;
 }
 
+p {
+    margin: 0;
+}
 .header__title {
   font-weight: 300;
   font-size: 44px;
@@ -67,4 +70,9 @@ img {
 
 #learn-more a:hover {
   color: #6c3a5c;
+}
+
+.div-footer {
+    background-color: #f7f7f7;
+    color: #6b3a5c;
 }
