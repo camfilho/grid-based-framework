@@ -128,4 +128,7 @@ $bg-secondary-color: white;
 Illegal character in query: | is not allowed.
 we copy the link from google api
 
+## original page 
+http://how-to-meditate.org/
+
 
