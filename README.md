@@ -10,7 +10,7 @@ we used sass to increase our productivity
 [3. positions](#Positions)
 [4. margins](#Margins)
 [5. paddings](#Padding)
-[6. Vertical alignment](#Valign)
+[6. Vertical alignment](#VerticalAlign)
 [7. Horizontal alignment](#Halign)
 [8. background and text colors](#Colors)
 [9. Font Size](#Fsize)
@@ -60,4 +60,24 @@ pos-fixed
 
 ## Margins
 m-sm-t-(n<10) === margin-small-top-3 | goes from 0 rem to 1 rem
-m-md-r-5 ===
+m-md-r-5 === margin-medium-right-5 the 5 === .5rem
+m-lg-l-1 === margin-large-left-.1rem
+
+## Paddings
+is the same but start with p
+p-sm-t-1 = padding-small-top-.1rem
+
+## VerticalAlign
+.text-v-align-top === vertical-align: top;
+
+.text-v-align-bottom === vertical-align: bottom;
+
+.text-v-align-center === vertical-align: middle;
+
+## HorizontalAlign
+.text-h-align-left === text-align: left;
+
+.text-h-align-right === text-align: right;
+
+.text-h-align-center ===  text-align: center;
+
